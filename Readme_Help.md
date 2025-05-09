@@ -105,6 +105,7 @@ To fix this:
 * Use FFmpeg to re-encode with aligned parameters (we can provide a command later if needed).
 
 ---
+
 Great. Let's move on to the **detailed step-by-step explanation** of how `LiT_Concat_Video_Perso_Planque.py` works, including purpose and reasoning behind each block of code.
 
 ---
@@ -271,12 +272,51 @@ os.remove(input_list_file)
 
 ---
 
-Would you like me to continue with sections on known limitations, debugging tips, and future improvements?
-Perfect — let’s complete the documentation with sections on **limitations**, **debugging tips**, and **future improvements**. These are essential for helping a new developer understand edge cases and extend the project if needed.
+## ⚠️ 5. FFmpeg Installation
+
+FFmpeg is a core dependency for video processing. Follow these steps to install it:
+
+1. **Download FFmpeg**:
+   - Visit the [official FFmpeg website](https://ffmpeg.org/download.html).
+   - Choose the appropriate version for your operating system (Windows, macOS, or Linux).
+
+2. **Install FFmpeg**:
+   - Extract the downloaded archive to a directory of your choice (e.g., `C:\ffmpeg` on Windows).
+   - Add the `bin` folder of the extracted directory to your system PATH:
+     - On Windows:
+       1. Open "Environment Variables" in System Properties.
+       2. Add the path to the `bin` folder (e.g., `C:\ffmpeg\bin`) to the `Path` variable.
+     - On macOS/Linux:
+       ```bash
+       export PATH=$PATH:/path/to/ffmpeg/bin
+       ```
+
+3. **Verify Installation**:
+   - Open a terminal or command prompt and run:
+     ```bash
+     ffmpeg -version
+     ```
+   - You should see the version details of FFmpeg.
 
 ---
 
-## ⚠️ 5. Known Limitations & Edge Cases
+## 6. Install ffprobe
+
+`ffprobe` is a tool included with FFmpeg for inspecting video and audio files. It is installed alongside FFmpeg.
+
+1. **Verify ffprobe Installation**:
+   - After installing FFmpeg, check if `ffprobe` is available by running:
+     ```bash
+     ffprobe -version
+     ```
+   - You should see the version details of `ffprobe`.
+
+2. **Usage**:
+   - Use `ffprobe` to inspect video and audio file properties, as described in the "How to Check Encoding" section of this document.
+
+---
+
+## ⚠️ 7. Known Limitations & Edge Cases
 
 ### ❗ 1. **Input Incompatibility**
 
@@ -315,7 +355,7 @@ If any input video does **not** meet encoding constraints (e.g., mismatched reso
 
 ---
 
-## 🧪 6. Debugging & Quality Control Tips
+## 🧪 8. Debugging & Quality Control Tips
 
 ### 🧾 Check Output Video Info
 
@@ -377,7 +417,7 @@ This ensures:
 
 ---
 
-## 🚀 7. Future Improvements
+## 🚀 9. Future Improvements
 
 ### 🧵 1. Multiprocessing Support
 
@@ -390,9 +430,9 @@ Add a helper script or flag that:
 * Runs `ffprobe` on all inputs
 * Confirms resolution, framerate, and codecs before concatenation
 
+---
 
-
-## 📎 8. Appendix: CLI Cheat Sheet
+## 📎 10. Appendix: CLI Cheat Sheet
 
 | Task                           | Command Example                                                        |
 | ------------------------------ | ---------------------------------------------------------------------- |

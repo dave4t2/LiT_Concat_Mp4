@@ -264,11 +264,51 @@ os.remove(input_list_file)
 
 ---
 
-Souhaitez-vous que je continue avec les sections sur les limitations connues, les conseils de débogage et les améliorations futures ?
+## 5. Installation de FFmpeg
+
+FFmpeg est une dépendance essentielle pour le traitement vidéo. Suivez ces étapes pour l'installer :
+
+1. **Télécharger FFmpeg** :
+   - Rendez-vous sur le [site officiel de FFmpeg](https://ffmpeg.org/download.html).
+   - Choisissez la version appropriée pour votre système d'exploitation (Windows, macOS ou Linux).
+
+2. **Installer FFmpeg** :
+   - Extrayez l'archive téléchargée dans un répertoire de votre choix (par exemple, `C:\ffmpeg` sur Windows).
+   - Ajoutez le dossier `bin` du répertoire extrait à votre PATH système :
+     - Sur Windows :
+       1. Ouvrez "Variables d'environnement" dans les Propriétés système.
+       2. Ajoutez le chemin vers le dossier `bin` (par exemple, `C:\ffmpeg\bin`) à la variable `Path`.
+     - Sur macOS/Linux :
+       ```bash
+       export PATH=$PATH:/chemin/vers/ffmpeg/bin
+       ```
+
+3. **Vérifier l'installation** :
+   - Ouvrez un terminal ou une invite de commande et exécutez :
+     ```bash
+     ffmpeg -version
+     ```
+   - Vous devriez voir les détails de la version de FFmpeg.
 
 ---
 
-## ⚠️ 5. Limitations connues et cas particuliers
+## 9. Installer ffprobe
+
+`ffprobe` est un outil inclus avec FFmpeg pour inspecter les fichiers vidéo et audio. Il est installé en même temps que FFmpeg.
+
+1. **Vérifier l'installation de ffprobe** :
+   - Après avoir installé FFmpeg, vérifiez si `ffprobe` est disponible en exécutant :
+     ```bash
+     ffprobe -version
+     ```
+   - Vous devriez voir les détails de la version de `ffprobe`.
+
+2. **Utilisation** :
+   - Utilisez `ffprobe` pour inspecter les propriétés des fichiers vidéo et audio, comme décrit dans la section "Comment vérifier l'encodage" de ce document.
+
+---
+
+## ⚠️ 6. Limitations connues et cas particuliers
 
 ### ❗ 1. **Incompatibilité des entrées**
 
@@ -307,7 +347,7 @@ Si une vidéo d'entrée ne respecte **pas** les contraintes d'encodage (par exem
 
 ---
 
-## 🧪 6. Conseils de débogage et contrôle qualité
+## 🧪 7. Conseils de débogage et contrôle qualité
 
 ### 🧾 Vérifiez les informations de la vidéo de sortie
 
@@ -369,7 +409,7 @@ Cela garantit :
 
 ---
 
-## 🚀 7. Améliorations futures
+## 🚀 8. Améliorations futures
 
 ### 🧵 1. Support de la multiprocessus
 
@@ -384,7 +424,7 @@ Ajoutez un script ou un drapeau qui :
 
 ---
 
-## 📎 8. Annexe : Aide-mémoire CLI
+## 📎 9. Annexe : Aide-mémoire CLI
 
 | Tâche                          | Exemple de commande                                                   |
 | ------------------------------ | ---------------------------------------------------------------------- |
