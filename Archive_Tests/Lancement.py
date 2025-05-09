@@ -6,11 +6,11 @@ dossierDeStockage = "D:/Documents/IncroyableThriller/SessionMars0224/VideoDuDebu
 dossier_videosPersonnalise = dossierDeStockage+"MiddlePersonnalise/"
 
 try:
-    # Charger les deux fichiers vidéo MP4
-    clip1 = VideoFileClip("D:/Documents/IncroyableThriller/SessionMars0224/VideoDuDebut/AssemblageVideoDepart/ProgrammePythonAutomatisation/Begin.mp4")
-    clip3 = VideoFileClip("D:/Documents/IncroyableThriller/SessionMars0224/VideoDuDebut/AssemblageVideoDepart/ProgrammePythonAutomatisation/End.mp4")
+    # Charger les deux fichiers vidÃ©o MP4
+    clip1 = VideoFileClip("D:/Documents/IncroyableThriller/SessionMars0224/VideoDuDebut/AssemblageVideoDepart/ProgrammePythonAutomatisation/video1.mp4")
+    clip3 = VideoFileClip("D:/Documents/IncroyableThriller/SessionMars0224/VideoDuDebut/AssemblageVideoDepart/ProgrammePythonAutomatisation/video3.mp4")
 
-    # Vérifier si le dossier existe
+    # VÃ©rifier si le dossier existe
     if os.path.exists(dossier_videosPersonnalise):
         fichiers_videos = os.listdir(dossier_videosPersonnalise)
     
@@ -22,21 +22,21 @@ try:
     else:
         print(f"Le dossier specifie nexiste pas : {dossier_videosPersonnalise}")
     
-   # Liste des fichiers vidéo dans le dossier `MiddlePersonnalise`
+   # Liste des fichiers vidÃ©o dans le dossier `MiddlePersonnalise`
     for fichier in os.listdir(dossier_videosPersonnalise):
 
         nom_sortie = f"bodycam_{fichier}"
         chemin_sortie = os.path.join("D:/Documents/IncroyableThriller/SessionMars0224/VideoDuDebut/", nom_sortie)
         
-        # Si c'est une vidéo MP4
+        # Si c'est une vidÃ©o MP4
         if fichier.endswith(".mp4") and not os.path.exists(chemin_sortie):
-            # Charger la vidéo personnalisée (clip à changer)
+            # Charger la vidÃ©o personnalisÃ©e (clip Ã  changer)
             clip2 = VideoFileClip(os.path.join(dossier_videosPersonnalise, fichier))
             
-            # Concaténer clip1, clip2 et clip3
+            # ConcatÃ©ner clip1, clip2 et clip3
             final_clip = concatenate_videoclips([clip1, clip2, clip3])
                         
-            # Sauvegarder la vidéo concaténée
+            # Sauvegarder la vidÃ©o concatÃ©nÃ©e
             final_clip.write_videofile(chemin_sortie, codec="libx264", bitrate="800k", audio_codec="aac")
     
     print("Toutes les videos ont ete traitees avec succes.")

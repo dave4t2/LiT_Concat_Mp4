@@ -15,8 +15,8 @@ logging.basicConfig(
 logging.info("Script execution started.")
 
 # Define Path names and file names
-video1_name = 'Begin.mp4'
-video3_name = 'End.mp4'
+video1_name = 'video1.mp4'
+video3_name = 'video3.mp4'
 video1_path = os.path.join('./input/Video1', video1_name)
 video2_path = './input/Video2/'
 video3_path = os.path.join('./input/Video3', video3_name)
