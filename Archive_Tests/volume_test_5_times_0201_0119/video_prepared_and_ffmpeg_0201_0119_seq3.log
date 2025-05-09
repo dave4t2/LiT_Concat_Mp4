@@ -1,0 +1,186 @@
+ffmpeg version N-117098-ga577d313b2-20240922 Copyright (c) 2000-2024 the FFmpeg developers
+  built with gcc 14.2.0 (crosstool-NG 1.26.0.106_ed12fa6)
+  configuration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-w64-mingw32- --arch=x86_64 --target-os=mingw32 --enable-gpl --enable-version3 --disable-debug --disable-w32threads --enable-pthreads --enable-iconv --enable-zlib --enable-libfreetype --enable-libfribidi --enable-gmp --enable-libxml2 --enable-lzma --enable-fontconfig --enable-libharfbuzz --enable-libvorbis --enable-opencl --disable-libpulse --enable-libvmaf --disable-libxcb --disable-xlib --enable-amf --enable-libaom --enable-libaribb24 --enable-avisynth --enable-chromaprint --enable-libdav1d --enable-libdavs2 --enable-libdvdread --enable-libdvdnav --disable-libfdk-aac --enable-ffnvcodec --enable-cuda-llvm --enable-frei0r --enable-libgme --enable-libkvazaar --enable-libaribcaption --enable-libass --enable-libbluray --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librist --enable-libssh --enable-libtheora --enable-libvpx --enable-libwebp --enable-libzmq --enable-lv2 --enable-libvpl --enable-openal --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-librav1e --enable-librubberband --enable-schannel --enable-sdl2 --enable-libsoxr --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libuavs3d --disable-libdrm --enable-vaapi --enable-libvidstab --enable-vulkan --enable-libshaderc --enable-libplacebo --enable-libvvenc --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-libs=-lgomp --extra-ldflags=-pthread --extra-ldexeflags= --cc=x86_64-w64-mingw32-gcc --cxx=x86_64-w64-mingw32-g++ --ar=x86_64-w64-mingw32-gcc-ar --ranlib=x86_64-w64-mingw32-gcc-ranlib --nm=x86_64-w64-mingw32-gcc-nm --extra-version=20240922
+  libavutil      59. 37.100 / 59. 37.100
+  libavcodec     61. 17.100 / 61. 17.100
+  libavformat    61.  6.100 / 61.  6.100
+  libavdevice    61.  2.101 / 61.  2.101
+  libavfilter    10.  3.100 / 10.  3.100
+  libswscale      8.  2.100 /  8.  2.100
+  libswresample   5.  2.100 /  5.  2.100
+  libpostproc    58.  2.100 / 58.  2.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:/temp/MP4 Test/video_1.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    creation_time   : 2024-12-27T14:31:22.000000Z
+  Duration: 00:04:43.82, start: 0.000000, bitrate: 952 kb/s
+  Stream #0:0[0x1](eng): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 720x1260 [SAR 1:1 DAR 4:7], 823 kb/s, 24 fps, 24 tbr, 24k tbn (default)
+      Metadata:
+        creation_time   : 2024-12-27T14:31:22.000000Z
+        handler_name    : ?Mainconcept Video Media Handler
+        vendor_id       : [0][0][0][0]
+        encoder         : AVC Coding
+  Stream #0:1[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 125 kb/s (default)
+      Metadata:
+        creation_time   : 2024-12-27T14:31:22.000000Z
+        handler_name    : #Mainconcept MP4 Sound Media Handler
+        vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (copy)
+  Stream #0:1 -> #0:1 (copy)
+Output #0, mpegts, to 'C:/temp/MP4 Test/volume_test_5_times_0201_0119\intermediate_1_seq3.ts':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    encoder         : Lavf61.6.100
+  Stream #0:0(eng): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 720x1260 [SAR 1:1 DAR 4:7], q=2-31, 823 kb/s, 24 fps, 24 tbr, 90k tbn (default)
+      Metadata:
+        creation_time   : 2024-12-27T14:31:22.000000Z
+        handler_name    : ?Mainconcept Video Media Handler
+        vendor_id       : [0][0][0][0]
+        encoder         : AVC Coding
+  Stream #0:1(eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 125 kb/s (default)
+      Metadata:
+        creation_time   : 2024-12-27T14:31:22.000000Z
+        handler_name    : #Mainconcept MP4 Sound Media Handler
+        vendor_id       : [0][0][0][0]
+Press [q] to stop, [?] for help
+[out#0/mpegts @ 00000247af1a86c0] video:28508KiB audio:4343KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 7.956904%
+frame= 6810 fps=0.0 q=-1.0 Lsize=   35466KiB time=00:04:43.75 bitrate=1023.9kbits/s speed=2.4e+03x    
+ffmpeg version N-117098-ga577d313b2-20240922 Copyright (c) 2000-2024 the FFmpeg developers
+  built with gcc 14.2.0 (crosstool-NG 1.26.0.106_ed12fa6)
+  configuration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-w64-mingw32- --arch=x86_64 --target-os=mingw32 --enable-gpl --enable-version3 --disable-debug --disable-w32threads --enable-pthreads --enable-iconv --enable-zlib --enable-libfreetype --enable-libfribidi --enable-gmp --enable-libxml2 --enable-lzma --enable-fontconfig --enable-libharfbuzz --enable-libvorbis --enable-opencl --disable-libpulse --enable-libvmaf --disable-libxcb --disable-xlib --enable-amf --enable-libaom --enable-libaribb24 --enable-avisynth --enable-chromaprint --enable-libdav1d --enable-libdavs2 --enable-libdvdread --enable-libdvdnav --disable-libfdk-aac --enable-ffnvcodec --enable-cuda-llvm --enable-frei0r --enable-libgme --enable-libkvazaar --enable-libaribcaption --enable-libass --enable-libbluray --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librist --enable-libssh --enable-libtheora --enable-libvpx --enable-libwebp --enable-libzmq --enable-lv2 --enable-libvpl --enable-openal --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-librav1e --enable-librubberband --enable-schannel --enable-sdl2 --enable-libsoxr --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libuavs3d --disable-libdrm --enable-vaapi --enable-libvidstab --enable-vulkan --enable-libshaderc --enable-libplacebo --enable-libvvenc --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-libs=-lgomp --extra-ldflags=-pthread --extra-ldexeflags= --cc=x86_64-w64-mingw32-gcc --cxx=x86_64-w64-mingw32-g++ --ar=x86_64-w64-mingw32-gcc-ar --ranlib=x86_64-w64-mingw32-gcc-ranlib --nm=x86_64-w64-mingw32-gcc-nm --extra-version=20240922
+  libavutil      59. 37.100 / 59. 37.100
+  libavcodec     61. 17.100 / 61. 17.100
+  libavformat    61.  6.100 / 61.  6.100
+  libavdevice    61.  2.101 / 61.  2.101
+  libavfilter    10.  3.100 / 10.  3.100
+  libswscale      8.  2.100 /  8.  2.100
+  libswresample   5.  2.100 /  5.  2.100
+  libpostproc    58.  2.100 / 58.  2.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:/temp/MP4 Test/video_2.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    creation_time   : 2024-12-27T12:33:29.000000Z
+  Duration: 00:00:18.54, start: 0.000000, bitrate: 862 kb/s
+  Stream #0:0[0x1](eng): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 720x1260 [SAR 1:1 DAR 4:7], 720 kb/s, 24 fps, 24 tbr, 24k tbn (default)
+      Metadata:
+        creation_time   : 2024-12-27T12:33:29.000000Z
+        handler_name    : ?Mainconcept Video Media Handler
+        vendor_id       : [0][0][0][0]
+        encoder         : AVC Coding
+  Stream #0:1[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 125 kb/s (default)
+      Metadata:
+        creation_time   : 2024-12-27T12:33:29.000000Z
+        handler_name    : #Mainconcept MP4 Sound Media Handler
+        vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (copy)
+  Stream #0:1 -> #0:1 (copy)
+Output #0, mpegts, to 'C:/temp/MP4 Test/volume_test_5_times_0201_0119\intermediate_2_seq3.ts':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    encoder         : Lavf61.6.100
+  Stream #0:0(eng): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 720x1260 [SAR 1:1 DAR 4:7], q=2-31, 720 kb/s, 24 fps, 24 tbr, 90k tbn (default)
+      Metadata:
+        creation_time   : 2024-12-27T12:33:29.000000Z
+        handler_name    : ?Mainconcept Video Media Handler
+        vendor_id       : [0][0][0][0]
+        encoder         : AVC Coding
+  Stream #0:1(eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 125 kb/s (default)
+      Metadata:
+        creation_time   : 2024-12-27T12:33:29.000000Z
+        handler_name    : #Mainconcept MP4 Sound Media Handler
+        vendor_id       : [0][0][0][0]
+Press [q] to stop, [?] for help
+[out#0/mpegts @ 0000022150333a00] video:1626KiB audio:284KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 8.713306%
+frame=  444 fps=0.0 q=-1.0 Lsize=    2076KiB time=00:00:18.50 bitrate= 919.4kbits/s speed=1.61e+03x    
+ffmpeg version N-117098-ga577d313b2-20240922 Copyright (c) 2000-2024 the FFmpeg developers
+  built with gcc 14.2.0 (crosstool-NG 1.26.0.106_ed12fa6)
+  configuration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-w64-mingw32- --arch=x86_64 --target-os=mingw32 --enable-gpl --enable-version3 --disable-debug --disable-w32threads --enable-pthreads --enable-iconv --enable-zlib --enable-libfreetype --enable-libfribidi --enable-gmp --enable-libxml2 --enable-lzma --enable-fontconfig --enable-libharfbuzz --enable-libvorbis --enable-opencl --disable-libpulse --enable-libvmaf --disable-libxcb --disable-xlib --enable-amf --enable-libaom --enable-libaribb24 --enable-avisynth --enable-chromaprint --enable-libdav1d --enable-libdavs2 --enable-libdvdread --enable-libdvdnav --disable-libfdk-aac --enable-ffnvcodec --enable-cuda-llvm --enable-frei0r --enable-libgme --enable-libkvazaar --enable-libaribcaption --enable-libass --enable-libbluray --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librist --enable-libssh --enable-libtheora --enable-libvpx --enable-libwebp --enable-libzmq --enable-lv2 --enable-libvpl --enable-openal --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-librav1e --enable-librubberband --enable-schannel --enable-sdl2 --enable-libsoxr --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libuavs3d --disable-libdrm --enable-vaapi --enable-libvidstab --enable-vulkan --enable-libshaderc --enable-libplacebo --enable-libvvenc --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-libs=-lgomp --extra-ldflags=-pthread --extra-ldexeflags= --cc=x86_64-w64-mingw32-gcc --cxx=x86_64-w64-mingw32-g++ --ar=x86_64-w64-mingw32-gcc-ar --ranlib=x86_64-w64-mingw32-gcc-ranlib --nm=x86_64-w64-mingw32-gcc-nm --extra-version=20240922
+  libavutil      59. 37.100 / 59. 37.100
+  libavcodec     61. 17.100 / 61. 17.100
+  libavformat    61.  6.100 / 61.  6.100
+  libavdevice    61.  2.101 / 61.  2.101
+  libavfilter    10.  3.100 / 10.  3.100
+  libswscale      8.  2.100 /  8.  2.100
+  libswresample   5.  2.100 /  5.  2.100
+  libpostproc    58.  2.100 / 58.  2.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:/temp/MP4 Test/video_3.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    creation_time   : 2024-12-27T12:33:29.000000Z
+  Duration: 00:00:18.54, start: 0.000000, bitrate: 862 kb/s
+  Stream #0:0[0x1](eng): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 720x1260 [SAR 1:1 DAR 4:7], 720 kb/s, 24 fps, 24 tbr, 24k tbn (default)
+      Metadata:
+        creation_time   : 2024-12-27T12:33:29.000000Z
+        handler_name    : ?Mainconcept Video Media Handler
+        vendor_id       : [0][0][0][0]
+        encoder         : AVC Coding
+  Stream #0:1[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 125 kb/s (default)
+      Metadata:
+        creation_time   : 2024-12-27T12:33:29.000000Z
+        handler_name    : #Mainconcept MP4 Sound Media Handler
+        vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (copy)
+  Stream #0:1 -> #0:1 (copy)
+Output #0, mpegts, to 'C:/temp/MP4 Test/volume_test_5_times_0201_0119\intermediate_3_seq3.ts':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    encoder         : Lavf61.6.100
+  Stream #0:0(eng): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 720x1260 [SAR 1:1 DAR 4:7], q=2-31, 720 kb/s, 24 fps, 24 tbr, 90k tbn (default)
+      Metadata:
+        creation_time   : 2024-12-27T12:33:29.000000Z
+        handler_name    : ?Mainconcept Video Media Handler
+        vendor_id       : [0][0][0][0]
+        encoder         : AVC Coding
+  Stream #0:1(eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 125 kb/s (default)
+      Metadata:
+        creation_time   : 2024-12-27T12:33:29.000000Z
+        handler_name    : #Mainconcept MP4 Sound Media Handler
+        vendor_id       : [0][0][0][0]
+Press [q] to stop, [?] for help
+[out#0/mpegts @ 000002b628a936c0] video:1626KiB audio:284KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 8.713306%
+frame=  444 fps=0.0 q=-1.0 Lsize=    2076KiB time=00:00:18.50 bitrate= 919.4kbits/s speed=1.72e+03x    
+ffmpeg version N-117098-ga577d313b2-20240922 Copyright (c) 2000-2024 the FFmpeg developers
+  built with gcc 14.2.0 (crosstool-NG 1.26.0.106_ed12fa6)
+  configuration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-w64-mingw32- --arch=x86_64 --target-os=mingw32 --enable-gpl --enable-version3 --disable-debug --disable-w32threads --enable-pthreads --enable-iconv --enable-zlib --enable-libfreetype --enable-libfribidi --enable-gmp --enable-libxml2 --enable-lzma --enable-fontconfig --enable-libharfbuzz --enable-libvorbis --enable-opencl --disable-libpulse --enable-libvmaf --disable-libxcb --disable-xlib --enable-amf --enable-libaom --enable-libaribb24 --enable-avisynth --enable-chromaprint --enable-libdav1d --enable-libdavs2 --enable-libdvdread --enable-libdvdnav --disable-libfdk-aac --enable-ffnvcodec --enable-cuda-llvm --enable-frei0r --enable-libgme --enable-libkvazaar --enable-libaribcaption --enable-libass --enable-libbluray --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librist --enable-libssh --enable-libtheora --enable-libvpx --enable-libwebp --enable-libzmq --enable-lv2 --enable-libvpl --enable-openal --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-librav1e --enable-librubberband --enable-schannel --enable-sdl2 --enable-libsoxr --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libuavs3d --disable-libdrm --enable-vaapi --enable-libvidstab --enable-vulkan --enable-libshaderc --enable-libplacebo --enable-libvvenc --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-libs=-lgomp --extra-ldflags=-pthread --extra-ldexeflags= --cc=x86_64-w64-mingw32-gcc --cxx=x86_64-w64-mingw32-g++ --ar=x86_64-w64-mingw32-gcc-ar --ranlib=x86_64-w64-mingw32-gcc-ranlib --nm=x86_64-w64-mingw32-gcc-nm --extra-version=20240922
+  libavutil      59. 37.100 / 59. 37.100
+  libavcodec     61. 17.100 / 61. 17.100
+  libavformat    61.  6.100 / 61.  6.100
+  libavdevice    61.  2.101 / 61.  2.101
+  libavfilter    10.  3.100 / 10.  3.100
+  libswscale      8.  2.100 /  8.  2.100
+  libswresample   5.  2.100 /  5.  2.100
+  libpostproc    58.  2.100 / 58.  2.100
+Input #0, concat, from 'C:/temp/MP4 Test/volume_test_5_times_0201_0119\input_list_seq3.txt':
+  Duration: N/A, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: h264 (Main) ([27][0][0][0] / 0x001B), yuv420p(progressive), 720x1260 [SAR 1:1 DAR 4:7], 24 fps, 24 tbr, 90k tbn
+  Stream #0:1(eng): Audio: aac (LC) ([15][0][0][0] / 0x000F), 48000 Hz, stereo, fltp, 127 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (copy)
+  Stream #0:1 -> #0:1 (copy)
+Output #0, mp4, to 'C:/temp/MP4 Test/volume_test_5_times_0201_0119\video_prepared_and_ffmpeg_0201_0119_seq3.mp4':
+  Metadata:
+    encoder         : Lavf61.6.100
+  Stream #0:0: Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 720x1260 [SAR 1:1 DAR 4:7], q=2-31, 24 fps, 24 tbr, 90k tbn
+  Stream #0:1(eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 127 kb/s
+Press [q] to stop, [?] for help
+[aost#0:1/copy @ 000002470ff59000] Non-monotonic DTS; previous: 13622272, current: 13620000; changing to 13622273. This may result in incorrect timestamps in the output file.
+[aost#0:1/copy @ 000002470ff59000] Non-monotonic DTS; previous: 13622273, current: 13621024; changing to 13622274. This may result in incorrect timestamps in the output file.
+[aost#0:1/copy @ 000002470ff59000] Non-monotonic DTS; previous: 13622274, current: 13622048; changing to 13622275. This may result in incorrect timestamps in the output file.
+[aost#0:1/copy @ 000002470ff59000] Non-monotonic DTS; previous: 14508832, current: 14508000; changing to 14508833. This may result in incorrect timestamps in the output file.
+[out#0/mp4 @ 000002470fee3400] video:31761KiB audio:4911KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.456407%
+frame= 7698 fps=0.0 q=-1.0 Lsize=   36839KiB time=00:05:20.75 bitrate= 940.9kbits/s speed=1.01e+03x    

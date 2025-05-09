@@ -1,0 +1,10 @@
+{
+    "github.copilot.chat.codeGeneration.instructions": [
+        {
+          "file": "./docs/javascript-styles.md"
+        },
+        {
+          "file": "./docs/database-styles.md"
+        }
+      ]
+}
